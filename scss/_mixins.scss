@@ -1,0 +1,56 @@
+@mixin button {
+  width: 200px;
+  height: 55px;
+  transition: all 0.3s;
+  border: none;
+  font-size: 20px;
+  font-family: $font-subtitle;
+  text-transform: uppercase;
+  color: #fff;
+}
+@mixin title {
+  font-size: 90px;
+  font-family: $font-title;
+  color: #262626;
+}
+@mixin subtitle {
+  font-size: 17px;
+  line-height: 1.45;
+  font-family: $font-subtitle;
+  color: #262626;
+}
+@mixin blog-section {
+  .data {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 55px;
+    height: 55px;
+    font-family: $font-title;
+    text-align: center;
+    background: #484e59;
+    color: #ffffff;
+    &- > span:first-child {
+      font-size: 32px;
+    }
+    &- > span:last-child {
+      font-size: 21px;
+    }
+  }
+  .blog-bottom-text {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    & > p {
+      margin-bottom: 25px;
+      font-size: 20px;
+      font-family: $font-title;
+      color: #ffffff;
+    }
+    & > span {
+      font-size: 13px;
+      font-family: $font-subtitle;
+      color: #dadee4;
+    }
+  }
+}
